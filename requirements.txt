@@ -1,0 +1,9 @@
+# Pinned dependencies for the bilateral filter carrier computation.
+# Generated on the machine where the experiment was first validated.
+# To reproduce: install exactly these versions in a clean environment.
+#
+# Testing uses unittest (Python standard library). No external test
+# framework is a dependency. This is an ES0 decision: one fewer link
+# in the reproducibility chain.
+numpy==2.4.4
+pillow==12.1.1

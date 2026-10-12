@@ -1,0 +1,12 @@
+{
+  "image": {
+    "height": 64,
+    "width": 64,
+    "seed": 42
+  },
+  "filter": {
+    "sigma_s": 3.0,
+    "sigma_r": 0.1,
+    "kernel_radius": 3
+  }
+}

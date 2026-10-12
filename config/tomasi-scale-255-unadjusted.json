@@ -1,0 +1,23 @@
+{
+  "run": {
+    "name": "tomasi-scale-255-unadjusted"
+  },
+  "input": {
+    "kind": "file",
+    "path": "data/raw/tomasi-manduchi/kitten-orig.gif",
+    "source_url": "https://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/kitten-orig.gif",
+    "raw_sha256": "eb68c2b218a84c4bb88d872a47c310e8c1ad2a75f84dbc809226fff9a8e9f289",
+    "decode_mode": "L",
+    "expected_shape": [
+      356,
+      325
+    ],
+    "decoded_uint8_sha256": "f3749776d97e9b2d0a4937c3af55b016ccb266f8135dbd6f8a85f11a03151818",
+    "scale_divisor": 1.0
+  },
+  "filter": {
+    "sigma_s": 3.0,
+    "sigma_r": 0.1,
+    "kernel_radius": 3
+  }
+}

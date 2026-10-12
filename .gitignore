@@ -1,0 +1,8 @@
+# Python bytecode — generated, not source.
+__pycache__/
+*.pyc
+.venv
+
+# OS-specific metadata.
+.DS_Store
+Thumbs.db

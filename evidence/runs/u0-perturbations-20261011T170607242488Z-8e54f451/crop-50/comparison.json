@@ -1,0 +1,99 @@
+{
+  "claim_type": "observed",
+  "comparison": "Filter the crop versus crop the full-image filtered output.",
+  "crop_bounds_stop_exclusive": {
+    "rows": [
+      50,
+      306
+    ],
+    "columns": [
+      50,
+      275
+    ]
+  },
+  "prediction": "Exact interior agreement; possible differences in the outer three rows or columns.",
+  "input": {
+    "shape": [
+      256,
+      225
+    ],
+    "dtype": "float64",
+    "mean": 0.39161356209150333,
+    "variance": 0.05023903691889338,
+    "min": 0.0,
+    "max": 1.0
+  },
+  "output": {
+    "shape": [
+      256,
+      225
+    ],
+    "dtype": "float64",
+    "mean": 0.39137157878964673,
+    "variance": 0.04751241353517626,
+    "min": 0.03411721279273427,
+    "max": 0.9662966826433882
+  },
+  "filter_seconds_single_measurement": 1.0199836659994617,
+  "interior": {
+    "exactly_equal": true,
+    "changed_elements": 0,
+    "total_elements": 54750,
+    "max_absolute_difference": 0.0,
+    "mean_absolute_difference": 0.0
+  },
+  "boundary": {
+    "exactly_equal": false,
+    "changed_elements": 2846,
+    "total_elements": 2850,
+    "max_absolute_difference": 0.07002126516836804,
+    "mean_absolute_difference": 0.007005266711657709
+  },
+  "arrays": {
+    "input": {
+      "file": "input.npy",
+      "shape": [
+        256,
+        225
+      ],
+      "dtype": "float64",
+      "npy_file_sha256": "8cbfa8a2aa95eb038abb05f079535ccdec1cb1199b160ecbfa92c5cffbb78252"
+    },
+    "output": {
+      "file": "output.npy",
+      "shape": [
+        256,
+        225
+      ],
+      "dtype": "float64",
+      "npy_file_sha256": "97fa8c8b566d99f64ea31858e6c45f12e2b4a4f0185a9ea7d41b27bbf3cbcc76"
+    },
+    "reference": {
+      "file": "reference.npy",
+      "shape": [
+        256,
+        225
+      ],
+      "dtype": "float64",
+      "npy_file_sha256": "f29fbd65a68d6f4d6d7f47d447fc036367d542bdcd27c0d827b4d0386a187105"
+    },
+    "difference": {
+      "file": "difference.npy",
+      "shape": [
+        256,
+        225
+      ],
+      "dtype": "float64",
+      "npy_file_sha256": "bb84de3f587566dcb7d7e01faeed0b4e3582cb35b80c5e34bc8f4700fa6398da"
+    },
+    "boundary_mask": {
+      "file": "boundary-mask.npy",
+      "shape": [
+        256,
+        225
+      ],
+      "dtype": "bool",
+      "npy_file_sha256": "574e4a3d58d9dfeaff11bf9724cb4e6bbe9e6a21c6e7ffc038ccd8e900345553"
+    }
+  }
+}

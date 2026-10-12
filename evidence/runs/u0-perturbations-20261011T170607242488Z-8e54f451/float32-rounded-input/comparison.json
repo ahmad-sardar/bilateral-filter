@@ -1,0 +1,89 @@
+{
+  "claim_type": "observed",
+  "experiment": "float32-rounded input values passed to the existing float64 filter.",
+  "direct_float32_prediction": "Rejection under the existing float64 input contract.",
+  "direct_float32_observation": {
+    "result": "rejected",
+    "exception_type": "AssertionError",
+    "exception_message": "Expected float64, got float32"
+  },
+  "float64_input_data_bytes": 925600,
+  "float32_input_data_bytes": 462800,
+  "input_rounding": {
+    "exactly_equal": false,
+    "changed_elements": 113174,
+    "total_elements": 115700,
+    "max_absolute_difference": 2.921796316002201e-08,
+    "mean_absolute_difference": 7.277704829613359e-09
+  },
+  "filter_input": {
+    "shape": [
+      356,
+      325
+    ],
+    "dtype": "float64",
+    "mean": 0.2897386484558701,
+    "variance": 0.06230647251276754,
+    "min": 0.0,
+    "max": 1.0
+  },
+  "output": {
+    "shape": [
+      356,
+      325
+    ],
+    "dtype": "float64",
+    "mean": 0.2894733100641918,
+    "variance": 0.06049938244395661,
+    "min": 0.03411721299632278,
+    "max": 1.0
+  },
+  "output_comparison": {
+    "exactly_equal": false,
+    "changed_elements": 113315,
+    "total_elements": 115700,
+    "max_absolute_difference": 5.0182261901454694e-08,
+    "mean_absolute_difference": 7.30792786959594e-09
+  },
+  "filter_seconds_single_measurement": 2.052259750000303,
+  "interpretation": "Input precision was reduced; this does not measure a filter doing all arithmetic in float32.",
+  "reference": "../baseline-output.npy",
+  "arrays": {
+    "float32_input": {
+      "file": "input-float32.npy",
+      "shape": [
+        356,
+        325
+      ],
+      "dtype": "float32",
+      "npy_file_sha256": "4c5bf489cde06cf4f1020289d05e5bf5e0dcf71fad0482223a9513541e7a8fdb"
+    },
+    "filter_input": {
+      "file": "input.npy",
+      "shape": [
+        356,
+        325
+      ],
+      "dtype": "float64",
+      "npy_file_sha256": "bd44800781b0403aef9da84cdffc7fd04b5976983571be1cf5514dcb5ad1637f"
+    },
+    "output": {
+      "file": "output.npy",
+      "shape": [
+        356,
+        325
+      ],
+      "dtype": "float64",
+      "npy_file_sha256": "8f02097e3f806f9bd37ae96264b865095e6e7780f1cda40300e5166c59aeec10"
+    },
+    "difference": {
+      "file": "difference.npy",
+      "shape": [
+        356,
+        325
+      ],
+      "dtype": "float64",
+      "npy_file_sha256": "a31c329c52799febafb4a345483a47e0032d2e7bcd8e229a459abe6b7c495d6d"
+    }
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "array_identity_definition": "SHA256(UTF8(str(shape)) || UTF8(dtype.str) || C-order value bytes)",
+  "artifacts": {
+    "input_npy": {
+      "array_identity_sha256": "45300d5ea01affc692f5116a368fcbf3e797da3e76a04e8a6f7c652868bf147e",
+      "file_sha256": "60678e33cca4f5df2edde2f1ebad084689366255946158afa9ab55ddce349f38"
+    },
+    "output_npy": {
+      "array_identity_sha256": "8e70c662db1bc45b5a87113b56742d0c19d0933ae899d1a002fc74e76480cc56",
+      "file_sha256": "dc57142cc42eebe3bcde1e267f4a166b91f3dfa6da001c6478e5a35e50f9187e"
+    }
+  },
+  "config": {
+    "filter": {
+      "kernel_radius": 3,
+      "sigma_r": 25.5,
+      "sigma_s": 3.0
+    },
+    "input": {
+      "decode_mode": "L",
+      "decoded_uint8_sha256": "f3749776d97e9b2d0a4937c3af55b016ccb266f8135dbd6f8a85f11a03151818",
+      "expected_shape": [
+        356,
+        325
+      ],
+      "kind": "file",
+      "path": "data/raw/tomasi-manduchi/kitten-orig.gif",
+      "raw_sha256": "eb68c2b218a84c4bb88d872a47c310e8c1ad2a75f84dbc809226fff9a8e9f289",
+      "scale_divisor": 1.0,
+      "source_url": "https://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/kitten-orig.gif"
+    },
+    "run": {
+      "name": "tomasi-scale-255-adjusted"
+    }
+  },
+  "config_file_sha256": "e6ff8b2ba1856748df7659a04fa6375ed582eccdcd4b32df6870fca79d5d441f",
+  "config_path": "config/tomasi-scale-255-adjusted.json",
+  "environment": {
+    "machine": "arm64",
+    "packages": {
+      "numpy": "2.4.4",
+      "pillow": "12.1.1",
+      "pip": "26.2.1"
+    },
+    "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+    "python_version": "3.14.7"
+  },
+  "filter": {
+    "kernel_radius": 3,
+    "sigma_r": 25.5,
+    "sigma_s": 3.0
+  },
+  "input": {
+    "decoded": {
+      "array_identity_sha256": "f3749776d97e9b2d0a4937c3af55b016ccb266f8135dbd6f8a85f11a03151818",
+      "dtype": "uint8",
+      "requested_mode": "L",
+      "shape_rows_cols": [
+        356,
+        325
+      ]
+    },
+    "filter_input": {
+      "array_identity_sha256": "45300d5ea01affc692f5116a368fcbf3e797da3e76a04e8a6f7c652868bf147e",
+      "dtype": "float64",
+      "maximum": 255.0,
+      "minimum": 0.0,
+      "shape_rows_cols": [
+        356,
+        325
+      ]
+    },
+    "kind": "file",
+    "normalization": {
+      "divisor": 1.0,
+      "operation": "divide"
+    },
+    "path": "data/raw/tomasi-manduchi/kitten-orig.gif",
+    "raw": {
+      "file_sha256": "eb68c2b218a84c4bb88d872a47c310e8c1ad2a75f84dbc809226fff9a8e9f289",
+      "format": "GIF",
+      "frame_count": 1,
+      "native_mode": "L",
+      "size_width_height": [
+        325,
+        356
+      ]
+    },
+    "source_url": "https://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/MANDUCHI1/kitten-orig.gif"
+  },
+  "output": {
+    "array_identity_sha256": "8e70c662db1bc45b5a87113b56742d0c19d0933ae899d1a002fc74e76480cc56",
+    "dtype": "float64",
+    "shape_rows_cols": [
+      356,
+      325
+    ]
+  },
+  "run_name": "tomasi-scale-255-adjusted",
+  "source_hashes": {
+    "bilateral.py": "be224b5ce9320ff1dffd2cce892bde9295bce0506d26cab24ab20acd1ae13e51",
+    "bilateral_2.py": "7929a505c591c47da07f132ee5592564d5de7d973affdca246cc81831b5bad40",
+    "run.py": "640de0d86813d73a45e621135f98a8ed786e83d9d7ae7924b446555216a677bd",
+    "sol_bilateral.py": "dc72ddd15f49636eacc903010da82aa1a75ab9fa6100c87d2fa24a82a6f6a688",
+    "src_file.py": "4db8284594dd5c7b6d17920aabbd037c8b29861c6ddadac1c1f525177019d8b1"
+  }
+}

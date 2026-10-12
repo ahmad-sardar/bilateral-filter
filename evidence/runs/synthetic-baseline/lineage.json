@@ -1,0 +1,29 @@
+{
+  "config": {
+    "image": {
+      "height": 64,
+      "width": 64,
+      "seed": 42
+    },
+    "filter": {
+      "sigma_s": 3.0,
+      "sigma_r": 0.1,
+      "kernel_radius": 3
+    }
+  },
+  "config_hash": "d05c837520fc23ef0201c30305a22bc6112c0ed39a164c38b682242fdef27b9b",
+  "source_hashes": {
+    "bilateral.py": "be224b5ce9320ff1dffd2cce892bde9295bce0506d26cab24ab20acd1ae13e51",
+    "bilateral_2.py": "7929a505c591c47da07f132ee5592564d5de7d973affdca246cc81831b5bad40",
+    "run.py": "0d5906457b4879eae2d454cda3151072e8dab5a6d934df4c3bd926aa75c26db6",
+    "sol_bilateral.py": "dc72ddd15f49636eacc903010da82aa1a75ab9fa6100c87d2fa24a82a6f6a688",
+    "src_file.py": "4db8284594dd5c7b6d17920aabbd037c8b29861c6ddadac1c1f525177019d8b1"
+  },
+  "python_version": "3.14.7",
+  "platform": "macOS-27.0-arm64-arm-64bit-Mach-O",
+  "packages": {
+    "numpy": "2.4.4",
+    "pillow": "12.1.1",
+    "pip": "26.2.1"
+  }
+}
